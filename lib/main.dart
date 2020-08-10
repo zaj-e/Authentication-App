@@ -1,3 +1,4 @@
+import 'package:auth_test/pages/authentication/app.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'home_page.dart';
@@ -12,10 +13,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'AUTH',
       theme: ThemeData(
-//        primarySwatch: Colors.blue,
         primaryColor: Colors.green,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'This is the home page'),
+      initialRoute: '/authentication',
+      routes: <String, WidgetBuilder>{
+        '/authentication': (BuildContext context) => AuthenticationApp(),
+        '/app': (BuildContext context) => MyHomePage(title: 'page B'),
+      },
     );
   }
 }

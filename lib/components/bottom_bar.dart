@@ -11,6 +11,7 @@ class _BottomBarState extends State<BottomBar> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
+//      Navigator.pushNamed(context, '/b');
     });
   }
 
@@ -19,16 +20,16 @@ class _BottomBarState extends State<BottomBar> {
     return BottomNavigationBar(
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
+          icon: Icon(Icons.chat),
+          title: Text('Message'),
+        ),
+        BottomNavigationBarItem(
           icon: Icon(Icons.home),
           title: Text('Home'),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.business),
-          title: Text('Business'),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.school),
-          title: Text('School'),
+          icon: Icon(Icons.account_circle),
+          title: Text('Account'),
         ),
       ],
       currentIndex: _selectedIndex,
