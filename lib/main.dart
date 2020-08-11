@@ -1,7 +1,7 @@
 import 'package:auth_test/pages/authentication/app.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'pages/booking/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,13 +10,12 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return CupertinoApp(
       title: 'AUTH',
-      theme: ThemeData(
-        primaryColor: Colors.green,
+      home: MyHomePage(
+        title: 'Sample',
       ),
-      home: MyHomePage(title: 'This is the home page'),
-      initialRoute: '/authentication',
+      initialRoute: '/app',
       routes: <String, WidgetBuilder>{
         '/authentication': (BuildContext context) => AuthenticationApp(),
         '/app': (BuildContext context) => MyHomePage(title: 'page B'),

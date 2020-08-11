@@ -18,6 +18,7 @@ class AuthenticationApp extends StatelessWidget {
             builder = (BuildContext _) => RegisterPage(
                   onRegisterComplete: () {
                     Navigator.of(context).pop();
+                    Navigator.of(context).pushNamed('/app');
                   },
                 );
             break;
