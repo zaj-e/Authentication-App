@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
 
 class customColor {
-  static const Color onPressed = Color(0xffD86422); //Orange
+  static const Color active = Color(0xffD86422); //Orange
 }
