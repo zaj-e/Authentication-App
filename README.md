@@ -11,9 +11,10 @@ https://pub.dev/documentation/flutter_appauth/latest/
 https://demo.identityserver.io/
 
 
-## WHO TROUBLESHOOTING
+## TROUBLESHOOTING
 https://github.com/flutter/flutter/issues/49507
 https://github.com/dnfield/flutter_svg/issues/368
+https://github.com/openid/AppAuth-Android/issues/128
 
 
 ## COOKBOOK is our BIBLE (checkpoint)
