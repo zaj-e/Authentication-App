@@ -5,15 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:auth_test/pages/booking/router.dart';
 
 void main() async {
-  if (await UserPreferences().isAuthenticated()) {
-    runApp(MyApp(
-      initRoute: '/app',
-    ));
-  } else {
-    runApp(MyApp(
-      initRoute: '/authentication',
-    ));
-  }
+//  if (await UserPreferences().isAuthenticated()) {
+//    runApp(MyApp(
+//      initRoute: '/app',
+//    ));
+//  } else {
+//    runApp(MyApp(
+//      initRoute: '/authentication',
+//    ));
+//  }
+  runApp(MyApp(initRoute: '/app'));
 }
 
 class MyApp extends StatelessWidget {
